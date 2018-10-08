@@ -1,326 +1,235 @@
-header{
-    background-color: #ffffff;
-    border-bottom-color: #cccccc;  
-    width:100%;
-    height: 90px;
-    display: fixed;
-    top:0;
-    /* overflow: auto; */
-    border-bottom: 2px solid #cccccc;
 
- }  
- 
-.name{
-    float: left;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    line-height: 90px;
-    height: 90px;
-    width: 250px;
-    text-align: center;
-    font-size: 28px;
-    font-family: Georgia, ‘Times New Roman’, Times, serif;
- 
- }
- 
- .main-menu{
-    /* width: 960px; */
-    height: 90px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    /* z-index: 2; */
-
- }
-
-.menu{
-    position: relative;
-    top: 30px;
-    width: 350px;
-    line-height: 20px;
-    float: right;
-    color: #777777;
- 
- }
- 
-.nav{
-    display: inline-block;
-    width: 110px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 20px;
-    font-size: 18px;
-    text-decoration: none;
-
- 
- }
- 
-.contact{
-    border-left: 2px solid #dddddd;
-    border-right: 2px solid #dddddd;
-
-    
-  
- }
- 
-.main-body{
-    border-bottom: 2px solid #dddddd;
-    padding: 10px;
-    color: #777777;
-    left: 50%;
-    background-image: url(../images/background.png);
-    background-repeat: repeat;
-    margin: 0 auto;
- }
- 
-.about-me{
-    color: #4aaaa5;
-    background-color: #ffffff;
-    height: 75px;
-    width: 920px;
-    /* margin: 10px 20px; */
-    border-bottom: 2px solid #dddddd;
-    position: relative;
-    float: left;
-    line-height: 75px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px;
- 
-    
- }
-
-.main{
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    margin: 0 auto;
-    width:960px;
-    position: relative;
-    padding: 20px;
-     
- }
- 
- img{
-    float: left;
-    width: 300px;
-    /* height: 300px; */
-    background-color: gray;
-    margin: 10px 20px;
-    /* max-width: 250px; */
-    margin-right: 10px;
- }
-
- img2{
-    float: left;
-    width: 150px;
-    height: 150px;
-    background-color: gray;
-    margin: 10px 20px;
-    /* max-width: 250px; */
- }
-
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    /* padding: 10px; */
-    margin: 20px;
-    left: 50%;
- }
- 
-footer{
-    background-color: #666666;
-    font-size: 10px;
-    position: relative;
-    padding: 20px;
-    border-top: 5px solid #4aaaa5;
-    line-height: 10px;
-    text-align: center;
-    color: #ffffff;
-
- 
- }
-
-.footerer{
-    position: absolute;
-    bottom: 1px;
-    left: 50%;
-
- }
-
- input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4aaaa5;;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
- .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 91%;
-    max-width: 960px;
-    /* left: 50%; */
-    margin: auto;
-    /* mess with the margin to get it centered. */
-}
-
-.pro1 {
-    width: 300px;
-    /* height: 300px; */
-    margin: 20px;
-    /* background-color: gray; */
-    display: inline-block;
-
- }
-
- .protext{
-    width: 300px;
-    height: 40px;
-    margin: 20px;
-    color: white;
-    background-color: #4aaaa5;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    top: -150px;
-    text-align: center;
-    font-size: 16px;
-    vertical-align: middle;
- }
- /* mess with "span" element to get the overlaying box with text. */
-
- .portpic{
-    /* width: 300px; */
-    /* height: 300px; */
-    /* margin: 20px; */
-    /* background-color: gray; */
-    display: inline-block;
-    width: 1000px;
-}
-
-
-
-
-/* set breakpoints as 980px, 768px, 640px */
-
-/* none of this shit works yet */
-@media only screen and (max-width: 980px) {
-    name{
-    width:  100%;
-    float: left;
-    }
-    .main-menu{
-        /* float: right; */
-        /* display: inline; */
-        color: #f2f2f2;
+        header{
+            height: 90px;
+        }   
+        .name{
+        float: left;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        line-height: 90px;
+        height: 90px;
+        width: 250px;
         text-align: center;
-        /* padding: 14px 16px; */
-        text-decoration: none;
-    }
+        font-size: 28px;
+        font-family: Georgia, ‘Times New Roman’, Times, serif;
+     
+     };
     
-    .about-me {
-        width: 94%;
-
-    }
-
-    .main {
-        width: 81%;
-        max-width: 980px;
-        margin: auto;
-
-    }
-
-    .container {
-        width: 91%;
-        margin-left: 0px;
+      .main-menu{
+        height: 90px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    
+     }
+     .menu{
+        position: relative;
+        top: 30px;
+        width: 245px;
+        line-height: 20px;
+        float: right;
+        padding: 0px 0px 0px 0px;
+        margin: 22px 0px 0px 0px;
+     }
         
-    }
+     .nav{
+        text-align: center;
+        font-size: 14px;
+        text-decoration: none;
+     }
+     .contact{
+        border-left: 2px solid #dddddd;
+        border-right: 2px solid #dddddd;
+     }
+     .main-body{
+        border-bottom: 2px solid #dddddd;
+        padding: 10px;
+        color: #777777;
+        left: 50%;
+        background-image: url(/images/background.png);
+        background-repeat: repeat;
+        margin: 0 auto;
+     }
+     .about-me{
+        color: #4aaaa5;
+        background-color: #ffffff;
+        height: 75px;
+        width: 920px;
+        width: 100%;
+        /* margin: 10px 20px; */
+        border-bottom: 2px solid #dddddd;
+        position: relative;
+        float: left;
+        line-height: 75px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 28px; 
+     }
+     .main{
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        margin: 0 auto;
+        /* width:960px; */
+        position: relative;
+        padding: 20px;
     
-}
-
-@media only screen and (max-width: 768px){
-
+     }
+     img{
+        float: left;
+        width: 300px;
+        /* height: 300px; */
+        background-color: gray;
+        margin: 10px 20px;
+        /* max-width: 250px; */
+        margin-right: 10px;
+     }
+     img2{
+        float: left;
+        width: 150px;
+        height: 150px;
+        background-color: gray;
+        margin: 10px 20px;
+        /* max-width: 250px; */
+     }
+     p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        /* padding: 10px; */
+        margin: 20px;
+        left: 50%;
+     }
+     .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 91%;
+        max-width: 960px;
+        /* left: 50%; */
+        margin: auto;
+        /* mess with the margin to get it centered. */
+    }
+    .pro1 {
+        width: 300px;
+        /* height: 300px; */
+        margin: 20px;
+        /* background-color: gray; */
+        display: inline-block;
+    
+     }
+     .protext{
+        width: 300px;
+        height: 40px;
+        margin: 20px;
+        color: white;
+        background-color: #4aaaa5;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        top: -150px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: middle;
+     }
+     .portpic{
+        /* width: 300px; */
+        /* height: 300px; */
+        /* margin: 20px; */
+        /* background-color: gray; */
+        display: inline-block;
+        width: 1000px;
+    }
+    #name{
+        width:  100%;
+        /* float: left; */
+        }
+    #email{
+        width: 100%
+    } 
+    #subject{
+        width: 100%
+    }   
+    @media only screen and (max-width: 768px){
+    
     .main {
         max-width: 768px;
+        width: 100%;
         margin: 20px;
     }
-
-}
-@media only screen and (max-width: 640px) {
-    .main-menu {
-        /* float: none; */
-        width: 100%;
-        display: block;
-        z-index: 10000;
+    
+    }
+    @media only screen and (max-width: 640px) {
+        .main-menu {
+            /* float: none; */
+            width: 100%;
+            display: block;
+            z-index: 10000;
+            
+        }
+    
+        .main {
+            max-width: 640px;
+            width: 100%;
+            margin: 0px ;
+        }
+    
+        .menu {
+            text-align: center;
+            width: 100%;
+        }
+    
+        header {
+            height: 180px;
+        }
+        img{
+            float: none;
+            /* margin: 20px; */
+            width: 100%;
+            margin: 0px;
+    
+        }
+    
+        .name {
+            width: 100%;
+            /* float: none; */
+        }
         
-    }
-
-    .main {
-        max-width: 640px;
-        margin: 0px 8%;
-    }
-
-    .menu {
-        text-align: center;
-        width: 100%;
-    }
-
-    header {
-        height: 180px;
-    }
-    img{
-        float: none;
-        /* margin: 20px; */
-        width: 100%;
-
-    }
-
-    .name {
-        width: 100%;
-        /* float: none; */
+        .about-me {
+            width: 94%;
+        }
+    
+        .main-body {
+            width: 100%;
+        }
+        
+        .header {
+            width: 600px;
+            height: 200px;
+        }
+    
+        .nav {
+            /* display: inline-block; */
+            /* transform: translateX (-50%); */
+            /* margin-left: 50%; */
+            /* display: inline; */
+            margin: 0px 25% 0px 25%;
+        }
+        
+        pro1 {
+            margin: auto;
+            width: 94%;
+        }
+    
+        .protext {
+            margin: auto;
+        }
+    
+        .nav-item{
+            width: 33%;
+        }
+        #nav-tab{
+            width: 100%;
+            margin: 0% 0% 0% 5%;
+        }
     }
     
-    .about-me {
-        width: 94%;
-    }
-
-    .main-body {
-        width: 100%;
-    }
     
-    .header {
-        width: 600px;
-        height: 200px;
-    }
-
-    .nav {
-        display: inline-block;
-        transform: translateX (-50%);
-        /* margin-left: 50%; */
-        /* display: inline; */
-    }
     
-    pro1 {
-        margin: auto;
-        width: 94%;
-    }
-
-    .protext {
-        margin: auto;
-    }
-}
-
-
-
+    
