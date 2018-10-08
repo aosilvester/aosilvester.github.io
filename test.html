@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <title>test</title>
     <style>
-    header{
+        header{
         height: 90px;
     }   
     .name{
@@ -161,6 +161,7 @@
 
 .main {
     max-width: 768px;
+    width: 100%;
     margin: 20px;
 }
 
@@ -176,6 +177,7 @@
 
     .main {
         max-width: 640px;
+        width: 100%;
         margin: 0px ;
     }
 
@@ -233,6 +235,10 @@
     .nav-item{
         width: 33%;
     }
+    #nav-tab{
+        width: 100%;
+        margin: 0% 0% 0% 5%;
+    }
 }
 
 
@@ -272,112 +278,130 @@
 
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-            aria-labelledby="nav-home-tab"><section class="main-body">
-            <div>
-    
-                <div class="main">
-                    <div class="about-me">About Me</div>
-                    <div class="img2"><img src="assets/images/pexels-photo-122829.jpeg"></div>
-    
-                    <p>
-                        Hello! This is my portfolio website. This website was built as the
-                        first homework assignment for the Full-Stack Coding Bootcamp at
-                        University of Richmond. As the course continues, I will be coming
-                        back to this website to update with my progress. I am looking to
-                        become a full stack specialist.
-                        <br>
-                        You can find out more about me, or reach out to me at the
-                        following
-                        <li><a href="mailto:aosilvester@gmail.com">aosilvester@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/aosilvester/">LinkedIn</a></li>
-                        <li><a href="https://github.com/aosilvester">GitHub</a></ul>
-    
-                            <br><br>
-                            In my free time, I am a musician. I know the Trombone, Tuba and
-                            Baritone. I am currently learning how to play the ukulele. In my
-                            time in college, I was a member of the university marching band.
-                            It
-                            afforded me the opportunity to travel across the country and see
-                            places I would never have the chance to otherwise. I made
-                            lifetime friends, and look back fondly on my time there. I try to
-                            go back
-                            at least once a year.
-                            <br><br>
-                            In an attempt to be healthy and nutritious, I have been learning
-                            to cook. If you ask my wife I cook eggs the best. I love outdoor
-                            cooking so much, I have two grills and a smoker. If I had more
-                            time, I
-                            would barbecue every day.
-                            <br><br>
-    
-    
-                    </p>
-    
-    
+            aria-labelledby="nav-home-tab">
+            <section class="main-body">
+                <div>
+
+                    <div class="main">
+                        <div class="about-me">About Me</div>
+                        <div class="img2"><img src="assets/images/pexels-photo-122829.jpeg"></div>
+
+                        <p>
+                            Hello! This is my portfolio website. This website was built
+                            as the
+                            first homework assignment for the Full-Stack Coding Bootcamp
+                            at
+                            University of Richmond. As the course continues, I will be
+                            coming
+                            back to this website to update with my progress. I am looking
+                            to
+                            become a full stack specialist.
+                            <br>
+                            You can find out more about me, or reach out to me at the
+                            following
+                            <li><a href="mailto:aosilvester@gmail.com">aosilvester@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/aosilvester/">LinkedIn</a></li>
+                            <li><a href="https://github.com/aosilvester">GitHub</a></ul>
+
+                                <br><br>
+                                In my free time, I am a musician. I know the Trombone,
+                                Tuba and
+                                Baritone. I am currently learning how to play the
+                                ukulele. In my
+                                time in college, I was a member of the university
+                                marching band.
+                                It
+                                afforded me the opportunity to travel across the country
+                                and see
+                                places I would never have the chance to otherwise. I made
+                                lifetime friends, and look back fondly on my time there.
+                                I try to
+                                go back
+                                at least once a year.
+                                <br><br>
+                                In an attempt to be healthy and nutritious, I have been
+                                learning
+                                to cook. If you ask my wife I cook eggs the best. I love
+                                outdoor
+                                cooking so much, I have two grills and a smoker. If I had
+                                more
+                                time, I
+                                would barbecue every day.
+                                <br><br>
+
+
+                        </p>
+
+
+                    </div>
                 </div>
-            </div>
-    
-        </section></div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><section class="main-body">
-        
+
+            </section>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <section class="main-body">
+
                 <body>
-                    
+
                     <div class="container">
                         <form action="/action_page.php">
                             <label for="fname">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your name..">
-        
+
                             <label for="lname">Email</label>
                             <input type="text" id="email" name="email" placeholder="example@gmail.com">
-        
-        
+
+
                             <label for="subject">Message</label>
                             <textarea id="subject" name="subject" style="height:200px"></textarea>
-        
+
                             <input type="submit" value="Submit">
                         </form>
                     </div>
-            </section></div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><section class="main-body">
+            </section>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <section class="main-body">
                 <div>
-                    
+
                     <div class="main">
                         <div class="about-me"><b>Portfolio</b></div>
-             
-                 <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
-             
-                 <div class="pro1"><img src="assets/images/portpic1.jpg">
-                     <div class=protext>
-                         <h3>Cricket!</h3>
-                     </div>
-                 </div>
-                 <div class="pro1"><img src="assets/images/portpic2.jpg">
-                     <div class=protext>
-                         <h3>Foggy Coasts!</h3>
-                     </div>
-                 </div>
-                 <div class="pro1"><img src="assets/images/portpic3.jpg">
-                     <div class=protext>
-                         <h3>Architecture!</h3>
-                     </div>
-                 </div>
-                 <div class="pro1"><img src="assets/images/portpic4.jpg">
-                     <div class=protext>
-                         <h3>Things we haven't learned yet!</h3>
-                     </div>
-                 </div>
-                 <div class="pro1"><img src="assets/images/portpic5.jpg">
-                     <div class=protext>
-                         <h3>Hardware!</h3>
-                     </div>
-                 </div>
-                 <br>
-                 <div class="protitle"></div>
-             
+
+                        <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+
+                        <div class="pro1"><img src="assets/images/portpic1.jpg">
+                            <div class=protext>
+                                <h3>Cricket!</h3>
+                            </div>
+                        </div>
+                        <div class="pro1"><img src="assets/images/portpic2.jpg">
+                            <div class=protext>
+                                <h3>Foggy Coasts!</h3>
+                            </div>
+                        </div>
+                        <div class="pro1"><img src="assets/images/portpic3.jpg">
+                            <div class=protext>
+                                <h3>Architecture!</h3>
+                            </div>
+                        </div>
+                        <div class="pro1"><img src="assets/images/portpic4.jpg">
+                            <div class=protext>
+                                <h3>Things we haven't learned yet!</h3>
+                            </div>
+                        </div>
+                        <div class="pro1"><img src="assets/images/portpic5.jpg">
+                            <div class=protext>
+                                <h3>Hardware!</h3>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="protitle"></div>
+
                     </div>
                 </div>
-             
-             </section></div>
+
+            </section>
+        </div>
     </div>
 </body>
 
