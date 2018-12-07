@@ -5,253 +5,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+
     <!-- Link to Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!-- dev-icon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- font mfizz -->
+    <link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css">
+
     <title>test</title>
+
     <style>
+
         header{
+            height: 90px;
+        }   
+        .name{
+        float: left;
+        background-color: #4aaaa5;
+        color: #ffffff;
+        line-height: 90px;
         height: 90px;
-    }   
-    .name{
-    float: left;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    line-height: 90px;
-    height: 90px;
-    width: 250px;
-    text-align: center;
-    font-size: 28px;
-    font-family: Georgia, ‘Times New Roman’, Times, serif;
- 
- };
-
-  .main-menu{
-    height: 90px;
-    margin: 0 auto;
-    background-color: #ffffff;
-
- }
- .menu{
-    position: relative;
-    top: 30px;
-    width: 245px;
-    line-height: 20px;
-    float: right;
-    padding: 0px 0px 0px 0px;
-    margin: 22px 0px 0px 0px;
- }
-    
- .nav{
-    text-align: center;
-    font-size: 14px;
-    text-decoration: none;
- }
- .contact{
-    border-left: 2px solid #dddddd;
-    border-right: 2px solid #dddddd;
- }
- .main-body{
-    border-bottom: 2px solid #dddddd;
-    padding: 10px;
-    color: #777777;
-    left: 50%;
-    background-image: url(../images/background.png);
-    background-repeat: repeat;
-    margin: 0 auto;
- }
- .about-me{
-    color: #4aaaa5;
-    background-color: #ffffff;
-    height: 75px;
-    width: 920px;
-    width: 100%;
-    /* margin: 10px 20px; */
-    border-bottom: 2px solid #dddddd;
-    position: relative;
-    float: left;
-    line-height: 75px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px; 
- }
- .main{
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    margin: 0 auto;
-    /* width:960px; */
-    position: relative;
-    padding: 20px;
-
- }
- img{
-    float: left;
-    width: 300px;
-    /* height: 300px; */
-    background-color: gray;
-    margin: 10px 20px;
-    /* max-width: 250px; */
-    margin-right: 10px;
- }
- img2{
-    float: left;
-    width: 150px;
-    height: 150px;
-    background-color: gray;
-    margin: 10px 20px;
-    /* max-width: 250px; */
- }
- p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-    /* padding: 10px; */
-    margin: 20px;
-    left: 50%;
- }
- .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 91%;
-    max-width: 960px;
-    /* left: 50%; */
-    margin: auto;
-    /* mess with the margin to get it centered. */
-}
-.pro1 {
-    width: 300px;
-    /* height: 300px; */
-    margin: 20px;
-    /* background-color: gray; */
-    display: inline-block;
-
- }
- .protext{
-    width: 300px;
-    height: 40px;
-    margin: 20px;
-    color: white;
-    background-color: #4aaaa5;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    top: -150px;
-    text-align: center;
-    font-size: 16px;
-    vertical-align: middle;
- }
- .portpic{
-    /* width: 300px; */
-    /* height: 300px; */
-    /* margin: 20px; */
-    /* background-color: gray; */
-    display: inline-block;
-    width: 1000px;
-}
-#name{
-    width:  100%;
-    /* float: left; */
-    }
-#email{
-    width: 100%
-} 
-#subject{
-    width: 100%
-}   
-@media only screen and (max-width: 768px){
-
-.main {
-    max-width: 768px;
-    width: 100%;
-    margin: 20px;
-}
-
-}
-@media only screen and (max-width: 640px) {
-    .main-menu {
-        /* float: none; */
-        width: 100%;
-        display: block;
-        z-index: 10000;
-        
-    }
-
-    .main {
-        max-width: 640px;
-        width: 100%;
-        margin: 0px ;
-    }
-
-    .menu {
+        width: 250px;
         text-align: center;
+        font-size: 28px;
+        font-family: Georgia, ‘Times New Roman’, Times, serif;
+     
+     };
+    
+      .main-menu{
+        height: 90px;
+        margin: 0 auto;
+        background-color: #ffffff;
+    
+     }
+     .menu{
+        position: relative;
+        top: 30px;
+        width: 245px;
+        line-height: 20px;
+        float: right;
+        padding: 0px 0px 0px 0px;
+        margin: 22px 0px 0px 0px;
+     }
+        
+     .nav{
+        text-align: center;
+        font-size: 14px;
+        text-decoration: none;
+     }
+     .contact{
+        border-left: 2px solid #dddddd;
+        border-right: 2px solid #dddddd;
+     }
+     .main-body{
+        border-bottom: 2px solid #dddddd;
+        padding: 10px;
+        color: #777777;
+        left: 50%;
+        background-image: url(assets/images/background.png);
+        background-repeat: repeat;
+        margin: 0 auto;
+     }
+     .about-me{
+        color: #4aaaa5;
+        background-color: #ffffff;
+        height: 75px;
+        width: 920px;
         width: 100%;
+        /* margin: 10px 20px; */
+        border-bottom: 2px solid #dddddd;
+        position: relative;
+        float: left;
+        line-height: 75px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 28px; 
+     }
+     .main{
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        margin: 0 auto;
+        margin: 0 5%;
+        /* width:960px; */
+        position: relative;
+        padding: 20px;
+    
+     }
+     img{
+        float: left;
+        width: 300px;
+        /* height: 300px; */
+        background-color: gray;
+        margin: 10px 20px;
+        /* max-width: 250px; */
+        margin-right: 10px;
+     }
+     img2{
+        float: left;
+        width: 150px;
+        height: 150px;
+        background-color: gray;
+        margin: 10px 20px;
+        /* max-width: 250px; */
+     }
+     p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        /* padding: 10px; */
+        margin: 20px;
+        left: 50%;
+     }
+     .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 91%;
+        max-width: 960px;
+        /* left: 50%; */
+        margin: auto;
+        /* mess with the margin to get it centered. */
     }
-
-    header {
-        height: 180px;
-    }
-    img{
-        float: none;
+    .pro1 {
+        width: 300px;
+        /* height: 300px; */
+        margin: 20px;
+        /* background-color: gray; */
+        display: inline-block;
+    
+     }
+     .protext{
+        width: 300px;
+        height: 40px;
+        margin: 20px;
+        color: white;
+        background-color: #4aaaa5;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        top: -150px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: middle;
+     }
+     .portpic{
+        /* width: 300px; */
+        /* height: 300px; */
         /* margin: 20px; */
-        width: 100%;
-        margin: 0px;
-
+        /* background-color: gray; */
+        display: inline-block;
+        width: 1000px;
     }
-
-    .name {
+    #name{
+        width:  100%;
+        /* float: left; */
+        }
+    #email{
+        width: 100%
+    } 
+    #subject{
+        width: 100%
+    }   
+    @media only screen and (max-width: 768px){
+    
+    .main {
+        max-width: 768px;
         width: 100%;
-        /* float: none; */
+        margin: 20px;
     }
     
-    .about-me {
-        width: 94%;
     }
-
-    .main-body {
-        width: 100%;
+    @media only screen and (max-width: 640px) {
+        .main-menu {
+            /* float: none; */
+            width: 100%;
+            display: block;
+            z-index: 10000;
+            
+        }
+    
+        .main {
+            max-width: 640px;
+            width: 100%;
+            margin: 0px ;
+        }
+    
+        .menu {
+            text-align: center;
+            width: 100%;
+        }
+    
+        header {
+            height: 180px;
+        }
+        img{
+            float: none;
+            /* margin: 20px; */
+            width: 100%;
+            margin: 0px;
+    
+        }
+    
+        .name {
+            width: 100%;
+            /* float: none; */
+        }
+        
+        .about-me {
+            width: 94%;
+        }
+    
+        .main-body {
+            width: 100%;
+        }
+        
+        .header {
+            width: 600px;
+            height: 200px;
+        }
+    
+        .nav {
+            /* display: inline-block; */
+            /* transform: translateX (-50%); */
+            /* margin-left: 50%; */
+            /* display: inline; */
+            margin: 0px 25% 0px 25%;
+        }
+        
+        pro1 {
+            margin: auto;
+            width: 94%;
+        }
+    
+        .protext {
+            margin: auto;
+        }
+    
+        .nav-item{
+            width: 33%;
+        }
+        #nav-tab{
+            width: 100%;
+            margin: 0% 0% 0% 5%;
+        }
     }
     
-    .header {
-        width: 600px;
-        height: 200px;
-    }
-
-    .nav {
-        /* display: inline-block; */
-        /* transform: translateX (-50%); */
-        /* margin-left: 50%; */
-        /* display: inline; */
-        margin: 0px 25% 0px 25%;
-    }
     
-    pro1 {
-        margin: auto;
-        width: 94%;
-    }
-
-    .protext {
-        margin: auto;
-    }
-
-    .nav-item{
-        width: 33%;
-    }
-    #nav-tab{
-        width: 100%;
-        margin: 0% 0% 0% 5%;
-    }
-}
-
-
-
-
+    
+    
     </style>
+
 </head>
 
 <body>
     <header>
         <section class="main-menu">
+
             <div class="name">Alex Silvester</div>
+
             <div class="menu">
 
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -265,6 +290,9 @@
                         href="#nav-contact" role="tab" aria-controls="nav-contact"
                         aria-selected="false">Portfolio</a>
                 </div>
+
+            </div>
+
         </section>
 
     </header>
@@ -331,6 +359,55 @@
                                 <br><br>
 
 
+                                <div class="about-me">Skills</div>
+                                <div class="skill"></div>        
+                                <!-- <div class="skill"><i class="fa fa-html5" style="font-size:48px;color:red"></i>
+                                </div>
+                                <div class="skill"><i class='fab fa-css3' style='font-size:48px;color:orange'></i>
+                                </div>
+                                <div class="skill"><i class="fa fa-github" style="font-size:48px;color:rgb(218, 218, 0)"></i>
+                                </div>
+                                <div class="skill"><i class='fab fa-js' style='font-size:48px;color:green'></i>
+                                </div>
+                                <div class="skill"><i class='fab fa-node-js' style='font-size:48px;color:blue'></i>
+                                </div>
+                                <div class="skill"></div>
+                                <div class="skill"><i class='fab fa-react' style='font-size:48px;color:indigo'></i>
+                                    react</div>
+                                <div class="skill"><i class='fab fa-npm' style='font-size:48px;color:red'></i>
+                                    npm</div>
+                                <div class="skill"><i class="devicon-bootstrap-plain colored"></i>bootstrap</div>
+                                <div class="skill"><i class="devicon-jquery-plain colored"></i>
+                                    jquery</div>
+                                <div class="skill"><i class="devicon-mysql-plain colored"></i><i class="icon-mysql"></i> icon-mysql
+                                    mysql</div>
+                                <div class="skill"><i class="devicon-sequelize-plain colored"></i>
+                                    sequelize</div>
+                                <div class="skill"><i class="devicon-mongodb-plain colored"></i>
+                                    mongodb</div>
+                                <div class="skill"><i class="devicon-heroku-original colored"></i>
+                                    heroku</div>
+                                <div class="skill"><i class="devicon-express-original colored"></i>
+                                    express</div>
+                                <div class="skill"><i class="devicon-slack-plain colored"></i>
+                                    slack</div> -->
+                                
+
+
+                        <i class="fa fa-html5" style="font-size:48px;color:red"></i>
+                        <i class='fab fa-css3' style='font-size:48px;color:orange'></i> 
+                        <i class="fa fa-github" style="font-size:48px;color:rgb(134, 218, 0)"></i>
+                        <i class='fab fa-js' style='font-size:48px;color:green'></i>
+                        <i class='fab fa-node-js' style='font-size:48px;color:blue'></i>
+                        <i class='fab fa-react' style='font-size:48px;color:indigo'></i>
+                        <i class='fab fa-npm' style='font-size:48px;color:red'></i>
+                        <i class="icon-bootstrap" style="font-size:3em;color:blue"></i>
+                        <i class="icon-mysql" style="font-size:3em;color:purple"></i>
+                        <i class="icon-mongodb" style="font-size:3em;color:orange"></i>
+                        <i class="icon-heroku" style="font-size:3em;color:green"></i>
+                        <i class="devicon-sequelize-plain colored" style="font-size:3em;color:green"></i>
+                        <i class="devicon-express-original colored"style="font-size:3em;color:purple"></i>
+                        <i class="devicon-slack-plain colored"style="font-size:3em; color:rgb(218, 160, 0)"></i>
                         </p>
 
 
@@ -404,6 +481,11 @@
             </section>
         </div>
     </div>
+
+
+
+    <script src="assets/javascript/javascript.js"></script>
+
 </body>
 
 </html>
