@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+
     <!-- Link to Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <!-- dev-icon -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- font mfizz -->
+    <link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css">
     <title>Alex Silvester | Web Developer</title>
-    <style>
+    <!-- <style>
         header {
             height: 90px;
         }
@@ -96,7 +113,7 @@
         img {
             float: left;
             width: 300px;
-            /* height: 300px; */
+            height: 300px;
             background-color: gray;
             margin: 10px 20px;
             /* max-width: 250px; */
@@ -263,174 +280,224 @@
                 margin: 0% 0% 0% 5%;
             }
         }
-    </style>
+    </style> -->
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <section class="main-menu">
-            <div class="name">Alex Silvester</div>
-            <div class="menu">
-
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                        href="#nav-home" role="tab" aria-controls="nav-home"
-                        aria-selected="true">Home</a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                        href="#nav-profile" role="tab" aria-controls="nav-profile"
-                        aria-selected="false">Contact</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
-                        href="#nav-contact" role="tab" aria-controls="nav-contact"
-                        aria-selected="false">Portfolio</a>
+        <header>
+            <section class="main-menu">
+    
+                <div class="name">Alex Silvester</div>
+    
+                <div class="menu">
+    
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active show" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Home</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Contact</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="true">Portfolio</a>
+                    </div>
+    
                 </div>
-        </section>
-
-    </header>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-            aria-labelledby="nav-home-tab">
-            <section class="main-body">
-                <div>
-
-                    <div class="main">
-                        <div class="about-me">About Me</div>
-                        <div class="img2"><img src="assets/images/pexels-photo-122829.jpeg"></div>
-
-                        <p>
-                            Hello! This is my portfolio website. This website was built
-                            as the
-                            first homework assignment for the Full-Stack Coding Bootcamp
-                            at
-                            University of Richmond. As the course continues, I will be
-                            coming
-                            back to this website to update with my progress. I am looking
-                            to
-                            become a full stack specialist.
+    
+            </section>
+    
+        </header>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section class="main-body">
+                    <div>
+    
+                        <div class="main">
+                            <div class="about-me">About Me</div>
+                            <div class="img2"><img src="assets/images/pexels-photo-122829.jpeg"></div>
+    
+                            <p>
+                                Hello! This is my portfolio website. This website was built
+                                as the
+                                first homework assignment for the Full-Stack Coding Bootcamp
+                                at
+                                University of Richmond. As the course continues, I will be
+                                coming
+                                back to this website to update with my progress. I am looking
+                                to
+                                become a full stack specialist.
+                                <br>
+                                You can find out more about me, or reach out to me at the
+                                following
+                                </p><li><a href="mailto:aosilvester@gmail.com">aosilvester@gmail.com</a></li>
+                                <li><a href="https://www.linkedin.com/in/aosilvester/">LinkedIn</a></li>
+                                <li><a href="https://github.com/aosilvester">GitHub</a>
+    
+                                    <br><br>
+                                    In my free time, I am a musician. I know the Trombone,
+                                    Tuba and
+                                    Baritone. I am currently learning how to play the
+                                    ukulele. In my
+                                    time in college, I was a member of the university
+                                    marching band.
+                                    It
+                                    afforded me the opportunity to travel across the country
+                                    and see
+                                    places I would never have the chance to otherwise. I made
+                                    lifetime friends, and look back fondly on my time there.
+                                    I try to
+                                    go back
+                                    at least once a year.
+                                    <br><br>
+                                    In an attempt to be healthy and nutritious, I have been
+                                    learning
+                                    to cook. If you ask my wife I cook eggs the best. I love
+                                    outdoor
+                                    cooking so much, I have two grills and a smoker. If I had
+                                    more
+                                    time, I
+                                    would barbecue every day.
+                                    <br><br>
+    
+    
+                                    <div class="about-me">Skills</div>
+                                    <div class="skill"></div>        
+                                    <!-- <div class="skill"><i class="fa fa-html5" style="font-size:48px;color:red"></i>
+                                    </div>
+                                    <div class="skill"><i class='fab fa-css3' style='font-size:48px;color:orange'></i>
+                                    </div>
+                                    <div class="skill"><i class="fa fa-github" style="font-size:48px;color:rgb(218, 218, 0)"></i>
+                                    </div>
+                                    <div class="skill"><i class='fab fa-js' style='font-size:48px;color:green'></i>
+                                    </div>
+                                    <div class="skill"><i class='fab fa-node-js' style='font-size:48px;color:blue'></i>
+                                    </div>
+                                    <div class="skill"></div>
+                                    <div class="skill"><i class='fab fa-react' style='font-size:48px;color:indigo'></i>
+                                        react</div>
+                                    <div class="skill"><i class='fab fa-npm' style='font-size:48px;color:red'></i>
+                                        npm</div>
+                                    <div class="skill"><i class="devicon-bootstrap-plain colored"></i>bootstrap</div>
+                                    <div class="skill"><i class="devicon-jquery-plain colored"></i>
+                                        jquery</div>
+                                    <div class="skill"><i class="devicon-mysql-plain colored"></i><i class="icon-mysql"></i> icon-mysql
+                                        mysql</div>
+                                    <div class="skill"><i class="devicon-sequelize-plain colored"></i>
+                                        sequelize</div>
+                                    <div class="skill"><i class="devicon-mongodb-plain colored"></i>
+                                        mongodb</div>
+                                    <div class="skill"><i class="devicon-heroku-original colored"></i>
+                                        heroku</div>
+                                    <div class="skill"><i class="devicon-express-original colored"></i>
+                                        express</div>
+                                    <div class="skill"><i class="devicon-slack-plain colored"></i>
+                                        slack</div> -->
+                                    
+    
+    
+                            <i class="fa fa-html5" style="font-size:48px;color:red"></i>
+                            <i class="fab fa-css3" style="font-size:48px;color:orange"></i> 
+                            <i class="fa fa-github" style="font-size:48px;color:rgb(134, 218, 0)"></i>
+                            <i class="fab fa-js" style="font-size:48px;color:green"></i>
+                            <i class="fab fa-node-js" style="font-size:48px;color:blue"></i>
+                            <i class="fab fa-react" style="font-size:48px;color:indigo"></i>
+                            <i class="fab fa-npm" style="font-size:48px;color:red"></i>
+                            <i class="icon-bootstrap" style="font-size:3em;color:blue"></i>
+                            <i class="icon-mysql" style="font-size:3em;color:purple"></i>
+                            <i class="icon-mongodb" style="font-size:3em;color:orange"></i>
+                            <i class="icon-heroku" style="font-size:3em;color:green"></i>
+                            <i class="devicon-sequelize-plain colored" style="font-size:3em;color:green"></i>
+                            <i class="devicon-express-original colored" style="font-size:3em;color:purple"></i>
+                            <i class="devicon-slack-plain colored" style="font-size:3em; color:rgb(218, 160, 0)"></i>
+                            <p></p>
+    
+    
+                        </li></div>
+                    </div>
+    
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <section class="main-body">
+    
+                    
+    
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <label for="fname">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+    
+                                <label for="lname">Email</label>
+                                <input type="text" id="email" name="email" placeholder="example@gmail.com">
+    
+    
+                                <label for="subject">Message</label>
+                                <textarea id="subject" name="subject" style="height:200px"></textarea>
+    
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <section class="main-body">
+                    <div>
+                        <div class="container">
+                        <div class="main">
+                            <div class="about-me"><b>Portfolio</b></div>
+    
+                            <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+    
+                            <div class="pro1"><a href="https://github.com/Ryan-T-Case/project-1"><img src="assets/images/foodie.JPG">
+                                    <div class="protext">
+                                        <h3>Food·ie</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro1"><a href="https://github.com/aosilvester/WordGuessGame"><img src="assets/images/hangman.jpg">
+                                    <div class="protext">
+                                        <h3>Word Guess Game</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro1"><a href="https://github.com/aosilvester/Firebase-Train-Scheduler"><img src="assets/images/trainscheduler.jpg">
+                                    <div class="protext">
+                                        <h3>Firebase Scheduler</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro1"><a href="https://github.com/LandrumTrev/book-reporter"><img src="assets/images/duck-blue.svg" alt="">
+    
+                                    <div class="protext">
+                                        <h3>take.note</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro1"><a href="https://github.com/aosilvester/liri-bot"><img src="assets/images/liri.jpg">
+                                    <div class="protext">
+                                        <h3>Liri-Bot</h3>
+                                    </div>
+                                </a>
+                            </div>
                             <br>
-                            You can find out more about me, or reach out to me at the
-                            following
-                            <li><a href="mailto:aosilvester@gmail.com">aosilvester@gmail.com</a></li>
-                            <li><a href="https://www.linkedin.com/in/aosilvester/">LinkedIn</a></li>
-                            <li><a href="https://github.com/aosilvester">GitHub</a></ul>
-
-                                <br><br>
-                                In my free time, I am a musician. I know the Trombone,
-                                Tuba and
-                                Baritone. I am currently learning how to play the
-                                ukulele. In my
-                                time in college, I was a member of the university
-                                marching band.
-                                It
-                                afforded me the opportunity to travel across the country
-                                and see
-                                places I would never have the chance to otherwise. I made
-                                lifetime friends, and look back fondly on my time there.
-                                I try to
-                                go back
-                                at least once a year.
-                                <br><br>
-                                In an attempt to be healthy and nutritious, I have been
-                                learning
-                                to cook. If you ask my wife I cook eggs the best. I love
-                                outdoor
-                                cooking so much, I have two grills and a smoker. If I had
-                                more
-                                time, I
-                                would barbecue every day.
-                                <br><br>
-
-
-                        </p>
-
-
+                            <div class="protitle"></div>
+    
+                        </div>&gt;
                     </div>
-                </div>
-
-            </section>
-        </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <section class="main-body">
-
-                <body>
-
-                    <div class="container">
-                        <form action="/action_page.php">
-                            <label for="fname">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name..">
-
-                            <label for="lname">Email</label>
-                            <input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-
-                            <label for="subject">Message</label>
-                            <textarea id="subject" name="subject" style="height:200px"></textarea>
-
-                            <input type="submit" value="Submit">
-                        </form>
                     </div>
-            </section>
+    
+                </section>
+            </div>
         </div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <section class="main-body">
-                <div>
-
-                    <div class="main">
-                        <div class="about-me"><b>Portfolio</b></div>
-
-                        <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
-
-                        <div class="pro1"><a href="https://github.com/Ryan-T-Case/project-1"><img
-                                    src="assets/images/portpic1.jpg">
-                                <div class=protext>
-                                    <h3>Group Project #1</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="pro1"><a href="https://github.com/aosilvester/WordGuessGame"><img
-                                    src="assets/images/portpic2.jpg">
-                                <div class=protext>
-                                    <h3>Word Guess Game</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="pro1"><a href="https://github.com/aosilvester/Firebase-Train-Scheduler"><img
-                                    src="assets/images/portpic3.jpg">
-                                <div class=protext>
-                                    <h3>Firebase Scheduler</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="pro1"><img src="assets/images/portpic4.jpg">
-                            <div class=protext>
-                                <h3>The Future!</h3>
-                            </div>
-                        </div>
-                        <div class="pro1"><img src="assets/images/portpic5.jpg">
-                            <div class=protext>
-                                <h3>Hardware!</h3>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="protitle"></div>
-
-                    </div>
-                </div>
-
-            </section>
-        </div>
-    </div>
-</body>
+    
+    
+    
+        <script src="assets/javascript/javascript.js"></script>
+    
+    
+    
+    </body>
 
 </html>
